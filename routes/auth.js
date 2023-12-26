@@ -1,6 +1,11 @@
 import express from "express";
-import { requestAuth, requestOtp, requestOtpValidate, requestResetPassword, requestServerStatus,  } from "../controllers/auth_controller.js";
-
+import {
+  requestAuth,
+  requestOtp,
+  requestOtpValidate,
+  requestResetPassword,
+  requestServerStatus,
+} from "../controllers/auth_controller.js";
 
 const router = express.Router();
 
