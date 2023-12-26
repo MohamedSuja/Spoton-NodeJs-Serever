@@ -4,7 +4,12 @@ import {
   otpRequestData,
   otpValidateData,
   resetPasswordData,
+  serverStatusData,
 } from "../db/auth.js";
+
+export const requestServerStatus = (req, res) => {
+    res.send(serverStatusData.response);
+};
 
 export const requestAuth = (req, res) => {
   const conation =

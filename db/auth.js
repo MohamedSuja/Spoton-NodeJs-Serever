@@ -1,3 +1,12 @@
+export const serverStatusData = {
+  response: {
+    status: true,
+    errorCode: 0,
+    errorDescription: null,
+    responseDto: "server is up and running",
+  },
+};
+
 export const authData = {
   response: {
     jwttoken:
