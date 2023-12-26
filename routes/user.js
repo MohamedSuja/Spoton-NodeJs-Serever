@@ -15,9 +15,13 @@ router.get(
 );
 
 //update user data from db.json
-router.put("/user/update",verifyUser, requestUserUpdateData);
+router.put("/user/update", verifyUser, requestUserUpdateData);
 
 //agentExposableId
-router.get("/agentSender/getExposableIdByUsername",verifyUser, requestAgentExposableId);
+router.get(
+  "/agentSender/getExposableIdByUsername",
+  verifyUser,
+  requestAgentExposableId
+);
 
 export default router;
