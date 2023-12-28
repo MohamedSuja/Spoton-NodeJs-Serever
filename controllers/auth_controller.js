@@ -37,7 +37,7 @@ export const requestOtpValidate = (req, res) => {
   if (conation) {
     res.send(otpValidateData.response);
   } else {
-    res.status(401).send(otpValidateData.error);
+    res.send(otpValidateData.error);
   }
 };
 
