@@ -36,15 +36,10 @@ export const otpRequestData = {
 
 export const otpValidateData = {
   response: {
-    status: true,
-    errorCode: 0,
-    errorDescription: null,
-    responseDto: "failed",
+    username: "mohammed@codelantic.com",
   },
   error: {
-    timestamp: "2023-12-25T13:15:03.001+00:00",
-    status: 400,
-    errors: ["Enter a valid OTP"],
+    username: null,
   },
 };
 
