@@ -1,3 +1,5 @@
+import { Constants } from "../utils/constants.js";
+
 export const userData = {
   response: {
     status: true,
@@ -12,7 +14,7 @@ export const userData = {
       dateOfBirth: "1987-07-16",
       fullName: "Mohammed Suja",
       title: "MR",
-      email: "mohammed@codelantic.com",
+      email: Constants.email,
       agentDetailsId: 1,
       agentName: "qa_Spoton Money",
       agentRegNumber: "MXAG01",

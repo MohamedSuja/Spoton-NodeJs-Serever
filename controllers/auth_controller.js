@@ -6,6 +6,7 @@ import {
   resetPasswordData,
   serverStatusData,
 } from "../db/auth.js";
+import { Constants } from "../utils/constants.js";
 
 export const requestServerStatus = (req, res) => {
   res.send(serverStatusData.response);
@@ -13,8 +14,8 @@ export const requestServerStatus = (req, res) => {
 
 export const requestAuth = (req, res) => {
   const conation =
-    req.body.username === "mohammed@codelantic.com" &&
-    req.body.password === "Test_1user";
+    req.body.username === Constants.email &&
+    req.body.password === Constants.password;
 
   if (conation) {
     res.send(authData.response);
@@ -24,7 +25,7 @@ export const requestAuth = (req, res) => {
 };
 
 export const requestOtp = (req, res) => {
-  const conation = req.body.username === "mohammed@codelantic.com";
+  const conation = req.body.username === Constants.email;
   if (conation) {
     res.send(otpRequestData.response);
   } else {

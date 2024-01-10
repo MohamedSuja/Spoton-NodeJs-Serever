@@ -1,3 +1,5 @@
+import { Constants } from "../utils/constants.js";
+
 export const serverStatusData = {
   response: {
     status: true,
@@ -36,7 +38,7 @@ export const otpRequestData = {
 
 export const otpValidateData = {
   response: {
-    username: "mohammed@codelantic.com",
+    username: Constants.email,
   },
   error: {
     username: null,
