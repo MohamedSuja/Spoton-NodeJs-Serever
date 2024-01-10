@@ -1,7 +1,8 @@
 import { agentExposableIdData, userData, userUpdateData } from "../db/user.js";
+import { Constants } from "../utils/constants.js";
 
 export const requestUserData = (req, res, next) => {
-  const conation = req.query.email === "mohammed@codelantic.com";
+  const conation = req.query.email === Constants.email;
   if (conation) {
     res.send(userData.response);
   } else {
@@ -19,7 +20,7 @@ export const requestUserUpdateData = (req, res) => {
 };
 
 export const requestAgentExposableId = (req, res) => {
-  const conation = req.query.username === "mohammed@codelantic.com";
+  const conation = req.query.username === Constants.email;
   if (conation) {
     res.send(agentExposableIdData.response);
   } else {
