@@ -1,4 +1,6 @@
 export const Constants = {
-  email: "testuser@gmail.com",
+  email: "mohammed@codelantic.com",
   password: "Test_1user",
+  token:
+    "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2hhbW1lZEBjb2RlbGFudGljLmNvbSIsInVzZXJfaWQiOjM3NiwicmVmcmVzaCI6dHJ1ZSwiZXhwIjoxNzA1NTU5NjgxLCJpc190ZmFfZW5hYmxlZCI6bnVsbCwiaWF0IjoxNzA0OTU0ODgxLCJ0ZmFEZWZhdWx0VHlwZSI6bnVsbCwiY2xpZW50X2NvZGUiOiJNTiJ9.LrTVSSR7KjUaT3KKUgGUfQT9M8-NBCbr70MYqC3toHv1WUo9Ln54PgxF0AXphaQM5sUUo5YzWZd1Z24dZrM3xQ",
 };

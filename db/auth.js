@@ -11,10 +11,8 @@ export const serverStatusData = {
 
 export const authData = {
   response: {
-    jwttoken:
-      "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb25leEBiYW5rb3lvLmNvbSIsInVzZXJfaWQiOjEsImV4cCI6MTY5NjQwNDg4NiwiaXNfdGZhX2VuYWJsZWQiOm51bGwsImlhdCI6MTY5NjQwMTI4NiwidGZhRGVmYXVsdFR5cGUiOm51bGwsImNsaWVudF9jb2RlIjoiTU4ifQ.SjQUVU-UbUJIqeKFjkBAxl1P8ZvIT12VCYkLe4-JxEZn_XJw0yM4dCYZNvXF6aajiUhyQcZ_tZdLowgeVLuzKA",
-    refreshToken:
-      "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb25leEBiYW5rb3lvLmNvbSIsInVzZXJfaWQiOjEsInJlZnJlc2giOnRydWUsImV4cCI6MTY5NzAwNjA4NiwiaXNfdGZhX2VuYWJsZWQiOm51bGwsImlhdCI6MTY5NjQwMTI4NiwidGZhRGVmYXVsdFR5cGUiOm51bGwsImNsaWVudF9jb2RlIjoiTU4ifQ.nX-9yX8WYC1-d-3rAc4mdbs_poeI7NYThYZUZ2EY9zkSqM3InK0sw_W-2iQXWgQp_D5NuHxyqZZCpd9BmCaCFQ",
+    jwttoken: Constants.token,
+    refreshToken: Constants.token,
   },
   error: {
     path: "/v1/auth/authenticate",
