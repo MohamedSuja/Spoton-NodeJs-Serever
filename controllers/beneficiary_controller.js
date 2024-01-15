@@ -3,8 +3,22 @@ import {
   agentBeneficiaryDetailsSave,
   agentReceivingCountriesType,
   beneficiaryCountries,
+  beneficiaryList,
+  beneficiaryView,
   currencyName,
 } from "../db/beneficiary.js";
+
+export const requestBeneficiaryList = (req, res) => {
+  if (req.query.isCorporate) {
+    res.send(beneficiaryList.responseCorporate);
+  } else {
+    res.send(beneficiaryList.responseIndividual);
+  }
+};
+
+export const requestBeneficiaryView = (req, res) => {
+  res.send(beneficiaryView.response);
+};
 
 export const requestBeneficiaryCountries = (req, res) => {
   res.send(beneficiaryCountries.response);
