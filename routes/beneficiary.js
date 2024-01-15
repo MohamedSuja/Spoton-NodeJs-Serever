@@ -4,11 +4,25 @@ import {
   requestAgentBeneficiaryDetailsSave,
   requestAgentReceivingCountriesType,
   requestBeneficiaryCountries,
+  requestBeneficiaryList,
+  requestBeneficiaryView,
   requestCurrencyName,
 } from "../controllers/beneficiary_controller.js";
 import { verifyUser } from "../middlewares/verify_user_middleware.js";
 
 const router = express.Router();
+
+router.get(
+  "/agentBeneficiaryDetails/agentBeneficiaryFilter/:emailId",
+  verifyUser,
+  requestBeneficiaryList
+);
+
+router.get(
+  "/agentBeneficiaryDetails/basic/detailsForMobile/:beneficiaryId",
+  verifyUser,
+  requestBeneficiaryView
+);
 
 router.get(
   "/agentReceivingCountries/beneficiaryCountries/:agentExposableId",
