@@ -9,7 +9,8 @@ import {
 } from "../db/beneficiary.js";
 
 export const requestBeneficiaryList = (req, res) => {
-  if (req.query.isCorporate) {
+  console.log(req.query.isCorporate);
+  if (req.query.isCorporate === "true") {
     res.send(beneficiaryList.responseCorporate);
   } else {
     res.send(beneficiaryList.responseIndividual);
